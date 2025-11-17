@@ -143,5 +143,10 @@ namespace RedAitana_Integradora
         {
             BuscarDatos(txtBusqueda.Text.Trim()); // Llama al método de búsqueda al cambiar el texto
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

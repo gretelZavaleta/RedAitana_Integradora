@@ -31,6 +31,7 @@ namespace RedAitana_Integradora
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GestionVoluntarios));
             panel2 = new Panel();
+            btnAgregar = new Button();
             label1 = new Label();
             label3 = new Label();
             pictureBox2 = new PictureBox();
@@ -38,7 +39,6 @@ namespace RedAitana_Integradora
             label4 = new Label();
             dgvVisitantes = new DataGridView();
             txtBusqueda = new TextBox();
-            btnAgregar = new Button();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvVisitantes).BeginInit();
@@ -58,9 +58,25 @@ namespace RedAitana_Integradora
             panel2.Dock = DockStyle.Fill;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(800, 450);
+            panel2.Size = new Size(946, 596);
             panel2.TabIndex = 3;
             panel2.Paint += panel2_Paint;
+            // 
+            // btnAgregar
+            // 
+            btnAgregar.BackColor = Color.FromArgb(177, 135, 193);
+            btnAgregar.FlatAppearance.BorderSize = 0;
+            btnAgregar.FlatAppearance.MouseOverBackColor = Color.FromArgb(223, 128, 108);
+            btnAgregar.FlatStyle = FlatStyle.Flat;
+            btnAgregar.Font = new Font("Century Gothic", 9F);
+            btnAgregar.ForeColor = Color.White;
+            btnAgregar.Location = new Point(127, 180);
+            btnAgregar.Name = "btnAgregar";
+            btnAgregar.Size = new Size(215, 50);
+            btnAgregar.TabIndex = 32;
+            btnAgregar.Text = "+ Nuevo Visitante/Beneficiario";
+            btnAgregar.UseVisualStyleBackColor = false;
+            btnAgregar.Click += btnAgregar_Click;
             // 
             // label1
             // 
@@ -87,7 +103,7 @@ namespace RedAitana_Integradora
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(494, 9);
+            pictureBox2.Location = new Point(721, 19);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(112, 74);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -102,7 +118,7 @@ namespace RedAitana_Integradora
             btnEditar.FlatStyle = FlatStyle.Flat;
             btnEditar.Font = new Font("Century Gothic", 9F);
             btnEditar.ForeColor = Color.White;
-            btnEditar.Location = new Point(275, 180);
+            btnEditar.Location = new Point(385, 180);
             btnEditar.Name = "btnEditar";
             btnEditar.Size = new Size(94, 50);
             btnEditar.TabIndex = 23;
@@ -116,18 +132,18 @@ namespace RedAitana_Integradora
             label4.ForeColor = Color.Black;
             label4.Location = new Point(6, 77);
             label4.Name = "label4";
-            label4.Size = new Size(603, 20);
+            label4.Size = new Size(831, 20);
             label4.TabIndex = 28;
-            label4.Text = "___________________________________________________________________________________________________";
+            label4.Text = "_________________________________________________________________________________________________________________________________________";
             // 
             // dgvVisitantes
             // 
             dgvVisitantes.BackgroundColor = Color.FromArgb(224, 200, 232);
             dgvVisitantes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvVisitantes.Location = new Point(32, 252);
+            dgvVisitantes.Location = new Point(127, 246);
             dgvVisitantes.Name = "dgvVisitantes";
             dgvVisitantes.RowHeadersWidth = 51;
-            dgvVisitantes.Size = new Size(544, 188);
+            dgvVisitantes.Size = new Size(679, 311);
             dgvVisitantes.TabIndex = 27;
             // 
             // txtBusqueda
@@ -135,31 +151,15 @@ namespace RedAitana_Integradora
             txtBusqueda.BackColor = Color.FromArgb(224, 200, 232);
             txtBusqueda.Location = new Point(142, 113);
             txtBusqueda.Name = "txtBusqueda";
-            txtBusqueda.Size = new Size(434, 27);
+            txtBusqueda.Size = new Size(691, 27);
             txtBusqueda.TabIndex = 26;
             txtBusqueda.TextChanged += txtBusqueda_TextChanged;
-            // 
-            // btnAgregar
-            // 
-            btnAgregar.BackColor = Color.FromArgb(177, 135, 193);
-            btnAgregar.FlatAppearance.BorderSize = 0;
-            btnAgregar.FlatAppearance.MouseOverBackColor = Color.FromArgb(223, 128, 108);
-            btnAgregar.FlatStyle = FlatStyle.Flat;
-            btnAgregar.Font = new Font("Century Gothic", 9F);
-            btnAgregar.ForeColor = Color.White;
-            btnAgregar.Location = new Point(32, 180);
-            btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(215, 50);
-            btnAgregar.TabIndex = 32;
-            btnAgregar.Text = "+ Nuevo Visitante/Beneficiario";
-            btnAgregar.UseVisualStyleBackColor = false;
-            btnAgregar.Click += btnAgregar_Click;
             // 
             // GestionVoluntarios
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(946, 596);
             Controls.Add(panel2);
             Name = "GestionVoluntarios";
             StartPosition = FormStartPosition.CenterScreen;
@@ -172,7 +172,7 @@ namespace RedAitana_Integradora
             ResumeLayout(false);
         }
 
-        
+
 
         #endregion
         private Panel panel2;

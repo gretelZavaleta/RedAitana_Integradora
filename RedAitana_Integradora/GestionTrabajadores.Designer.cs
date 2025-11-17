@@ -51,9 +51,9 @@
             btnNuevoTrabajador.FlatStyle = FlatStyle.Flat;
             btnNuevoTrabajador.Font = new Font("Century Gothic", 9F);
             btnNuevoTrabajador.ForeColor = Color.White;
-            btnNuevoTrabajador.Location = new Point(35, 173);
+            btnNuevoTrabajador.Location = new Point(35, 162);
             btnNuevoTrabajador.Name = "btnNuevoTrabajador";
-            btnNuevoTrabajador.Size = new Size(215, 50);
+            btnNuevoTrabajador.Size = new Size(233, 61);
             btnNuevoTrabajador.TabIndex = 1;
             btnNuevoTrabajador.Text = "+ Nuevo Trabajador/Colaborador";
             btnNuevoTrabajador.UseVisualStyleBackColor = false;
@@ -67,9 +67,9 @@
             btnEditar.FlatStyle = FlatStyle.Flat;
             btnEditar.Font = new Font("Century Gothic", 9F);
             btnEditar.ForeColor = Color.White;
-            btnEditar.Location = new Point(278, 173);
+            btnEditar.Location = new Point(308, 162);
             btnEditar.Name = "btnEditar";
-            btnEditar.Size = new Size(94, 50);
+            btnEditar.Size = new Size(115, 61);
             btnEditar.TabIndex = 2;
             btnEditar.Text = "Editar";
             btnEditar.UseVisualStyleBackColor = false;
@@ -83,7 +83,7 @@
             btnTrabajadores.FlatStyle = FlatStyle.Flat;
             btnTrabajadores.Font = new Font("Century Gothic", 9F);
             btnTrabajadores.ForeColor = Color.White;
-            btnTrabajadores.Location = new Point(445, 163);
+            btnTrabajadores.Location = new Point(552, 184);
             btnTrabajadores.Name = "btnTrabajadores";
             btnTrabajadores.Size = new Size(134, 29);
             btnTrabajadores.TabIndex = 3;
@@ -99,7 +99,7 @@
             btnColaboradores.FlatStyle = FlatStyle.Flat;
             btnColaboradores.Font = new Font("Century Gothic", 9F);
             btnColaboradores.ForeColor = Color.White;
-            btnColaboradores.Location = new Point(445, 202);
+            btnColaboradores.Location = new Point(702, 184);
             btnColaboradores.Name = "btnColaboradores";
             btnColaboradores.Size = new Size(134, 29);
             btnColaboradores.TabIndex = 4;
@@ -112,7 +112,7 @@
             txtBusqueda.BackColor = Color.FromArgb(224, 200, 232);
             txtBusqueda.Location = new Point(145, 106);
             txtBusqueda.Name = "txtBusqueda";
-            txtBusqueda.Size = new Size(434, 27);
+            txtBusqueda.Size = new Size(691, 27);
             txtBusqueda.TabIndex = 5;
             txtBusqueda.TextChanged += txtBusqueda_TextChanged;
             // 
@@ -123,7 +123,7 @@
             dgvTrabajadores.Location = new Point(35, 245);
             dgvTrabajadores.Name = "dgvTrabajadores";
             dgvTrabajadores.RowHeadersWidth = 51;
-            dgvTrabajadores.Size = new Size(544, 188);
+            dgvTrabajadores.Size = new Size(801, 311);
             dgvTrabajadores.TabIndex = 6;
             dgvTrabajadores.CellContentClick += dgvTrabajadores_CellContentClick;
             // 
@@ -141,12 +141,13 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(497, 2);
+            pictureBox2.Location = new Point(739, 16);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(112, 74);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 19;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // label4
             // 
@@ -154,9 +155,9 @@
             label4.ForeColor = Color.Black;
             label4.Location = new Point(9, 70);
             label4.Name = "label4";
-            label4.Size = new Size(603, 20);
+            label4.Size = new Size(747, 20);
             label4.TabIndex = 18;
-            label4.Text = "___________________________________________________________________________________________________";
+            label4.Text = "___________________________________________________________________________________________________________________________";
             // 
             // label1
             // 
@@ -174,7 +175,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(946, 596);
             Controls.Add(label1);
             Controls.Add(label3);
             Controls.Add(pictureBox2);

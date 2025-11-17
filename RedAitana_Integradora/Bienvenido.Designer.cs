@@ -56,7 +56,7 @@ namespace RedAitana_Integradora
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(250, 444);
+            panel1.Size = new Size(250, 668);
             panel1.TabIndex = 3;
             // 
             // panel3
@@ -141,33 +141,34 @@ namespace RedAitana_Integradora
             // 
             // panelContenedor
             // 
+            panelContenedor.Anchor = AnchorStyles.None;
             panelContenedor.BackColor = Color.White;
             panelContenedor.Controls.Add(pictureBox1);
             panelContenedor.Controls.Add(label1);
-            panelContenedor.Dock = DockStyle.Fill;
-            panelContenedor.Location = new Point(250, 0);
+            panelContenedor.Location = new Point(334, 47);
             panelContenedor.Name = "panelContenedor";
-            panelContenedor.Size = new Size(605, 444);
+            panelContenedor.Size = new Size(940, 621);
             panelContenedor.TabIndex = 4;
             panelContenedor.Paint += panelContenedor_Paint;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(195, 222);
+            pictureBox1.Location = new Point(192, 237);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(202, 133);
+            pictureBox1.Size = new Size(556, 358);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.Top;
             label1.AutoSize = true;
-            label1.Font = new Font("Century Gothic", 36F, FontStyle.Bold);
-            label1.Location = new Point(115, 114);
+            label1.Font = new Font("Century Gothic", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(200, 114);
             label1.Name = "label1";
-            label1.Size = new Size(379, 70);
+            label1.Size = new Size(506, 93);
             label1.TabIndex = 0;
             label1.Text = "Bienvenidos";
             // 
@@ -175,13 +176,15 @@ namespace RedAitana_Integradora
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(855, 444);
+            BackColor = Color.White;
+            ClientSize = new Size(1274, 668);
             Controls.Add(panelContenedor);
             Controls.Add(panel1);
             Location = new Point(372, 191);
             Name = "Bienvenido";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "RedAitana";
+            WindowState = FormWindowState.Maximized;
             Load += Bienvenido_Load_1;
             panel1.ResumeLayout(false);
             panel3.ResumeLayout(false);

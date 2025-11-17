@@ -58,7 +58,7 @@
             btnSeleccionar.FlatStyle = FlatStyle.Flat;
             btnSeleccionar.Font = new Font("Century Gothic", 9F);
             btnSeleccionar.ForeColor = Color.White;
-            btnSeleccionar.Location = new Point(23, 134);
+            btnSeleccionar.Location = new Point(127, 134);
             btnSeleccionar.Name = "btnSeleccionar";
             btnSeleccionar.Size = new Size(217, 36);
             btnSeleccionar.TabIndex = 5;
@@ -72,7 +72,7 @@
             dgvGeneral.BackgroundColor = Color.FromArgb(224, 200, 232);
             dgvGeneral.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvGeneral.GridColor = Color.FromArgb(177, 135, 193);
-            dgvGeneral.Location = new Point(23, 190);
+            dgvGeneral.Location = new Point(127, 188);
             dgvGeneral.Name = "dgvGeneral";
             dgvGeneral.RowHeadersWidth = 51;
             dgvGeneral.Size = new Size(569, 233);
@@ -96,7 +96,7 @@
             btnEditar.FlatStyle = FlatStyle.Flat;
             btnEditar.Font = new Font("Century Gothic", 9F);
             btnEditar.ForeColor = Color.White;
-            btnEditar.Location = new Point(263, 134);
+            btnEditar.Location = new Point(357, 134);
             btnEditar.Margin = new Padding(2);
             btnEditar.Name = "btnEditar";
             btnEditar.Size = new Size(106, 36);

@@ -33,7 +33,7 @@ namespace RedAitana_Integradora
 
                 var ventanaBienvenido = new Bienvenido(); // instancia tu formulario de bienvenida
                 ventanaBienvenido.Show();
-                this.Hide(); 
+                this.Hide();
             }
             else
             {
@@ -49,6 +49,16 @@ namespace RedAitana_Integradora
         private void label1_Click(object sender, EventArgs e) { }
 
         private void txtPassword_TextChanged(object sender, EventArgs e) { }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
 

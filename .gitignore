@@ -39,7 +39,7 @@ ScaffoldingReadMe.txt
 *.vsps
 
 # Windows Form Designer
-*.resx
+#*.resx
 
 # Git folders you might accidentally add
 *.orig
