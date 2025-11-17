@@ -13,7 +13,7 @@ namespace RedAitana_Integradora.BSD
 
         private string server = "localhost";
         private string user= "root";
-        private string password = "root";
+        private string password = "Root";
         private string bd = "aitanabsd";
 
         private string cadenaConexion;

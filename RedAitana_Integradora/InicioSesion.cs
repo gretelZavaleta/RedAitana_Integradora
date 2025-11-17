@@ -19,21 +19,20 @@ namespace RedAitana_Integradora
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            string passwordIngresada = txtPassword.Text.Trim();
+            string username = comboBox1.SelectedItem?.ToString();
+            string password = txtPassword.Text.Trim();
 
-            if (string.IsNullOrWhiteSpace(passwordIngresada))
+            if (string.IsNullOrEmpty(username) || string.IsNullOrWhiteSpace(password)) 
             {
-                MessageBox.Show("Ingrese la contraseña.");
+                MessageBox.Show("Complete todos los campos.");
                 return;
             }
-
-            if (ValidarCredencial.IniciarSesion(passwordIngresada))
+            if (ValidarCredencial.IniciarSesion(username, password))
             {
                 MessageBox.Show($"Bienvenido {ValidarCredencial.TipoUsuario}");
-
-                var ventanaBienvenido = new Bienvenido(); // instancia tu formulario de bienvenida
+                var ventanaBienvenido = new Bienvenido();
                 ventanaBienvenido.Show();
-                this.Hide(); 
+                this.Hide();
             }
             else
             {
